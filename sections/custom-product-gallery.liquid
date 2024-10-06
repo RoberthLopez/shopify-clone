@@ -1,0 +1,42 @@
+{{ 'custom-product-gallery.css' | asset_url | stylesheet_tag }}
+
+{% assign additional_description = product.metafields.custom.product_description.value %}
+
+
+<div class="custom-product-gallery__container" style="background-color: {{ additional_description.gallery_background }};">
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper product-galley__image-container" >
+            {% for product_image in product.images %}
+                <div class="swiper-slide product-gallery__slide" style="background-color: {{ additional_description.gallery_background }};">
+                    {{ product_image |  image_url: width: 2000  |  image_tag }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper swiper-wrapper__thumbs">
+        {% for product_image in product.images %}
+            <div class="swiper-slide swiper-slide__thumbs" style="background-color: {{ additional_description.gallery_background }};">
+                {{ product_image |  image_url: width: 300  |  image_tag }}
+            </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
+
+<script>
+    console.log({{ additional_description.title | json}}, 'metafield list')
+</script>
+
+{% schema %}
+{
+    "name": "Custom Product Gallery",
+    "settings": [
+    ],
+    "presets": [
+        {
+            "name": "Custom Product Gallery"
+        }
+    ]
+}
+{% endschema %}
