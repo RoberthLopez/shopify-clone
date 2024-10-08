@@ -1,0 +1,66 @@
+{{ 'custom-faq.css' | asset_url | stylesheet_tag }}
+{{ 'custom-faqs.js' | asset_url | script_tag }}
+<div class="faq__container">
+  {% render 'custom-svg' layer: 'Layer4'
+    , class: 'waveTop'
+    , data-name: 'Layer 4'
+    , background: '#e15a41' %}
+  <div class="faq__inner-container">
+    <div class="faq__title-container">
+      <h3>Faq</h3>
+    </div>
+    <div class="faq__item-container">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'faq_item' %}
+            <div class="faq__item">
+              <button>
+                <h4>
+                  {{ block.settings.title }}
+                </h4>
+                <span class="faq__item-icon"></span>
+              </button>
+              <div class="faq__item-text">
+                {{ block.settings.faq_description }}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+  {% render 'custom-svg' layer: 'Layer4'
+    , class: 'waveBottom'
+    , data-name: 'Layer 5'
+    , background: '#e15a41' %}
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Faqs",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Faq Item",
+        "type": "faq_item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Faq"
+          },
+          {
+            "type": "richtext",
+            "label": "Faq Description",
+            "id": "faq_description"
+          }
+        ]
+
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Faqs"
+      }
+    ]
+  }
+{% endschema %}

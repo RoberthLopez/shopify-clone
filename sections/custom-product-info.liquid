@@ -11,7 +11,10 @@
           <h1>{{ product.title }}</h1>
         </div>
       {% when 'small_text' %}
-        <span {{ block.shopify_attributes }} class="product-info__small-text">MADE WITH AMORE</span>
+        {% assign additional_description = product.metafields.custom.product_description.value %}
+        {% if additional_description.small_phrase %}
+          <span {{ block.shopify_attributes }} class="product-info__small-text">{{ additional_description.small_phrase }}</span>
+        {% endif %}
       {% when 'price' %}
         <div {{ block.shopify_attributes }} class="product-info__price-container">
           <span class="product-info__normal-price">{{ product.price_max | money }}</span>
@@ -50,9 +53,11 @@
                     {{ product_item.price | money }}
                   </div>
                   <div class="product-info__ymal-card-button-container">
-                    <button class="product-info__cta">
-                      Add
-                    </button>
+                    <a href="{{ product_item.url }}">
+                      <button class="product-info__cta">
+                        Add
+                      </button>
+                    </a>
                   </div>
                 </div>
               {% endfor %}

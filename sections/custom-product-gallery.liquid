@@ -3,7 +3,10 @@
 {% assign additional_description = product.metafields.custom.product_description.value %}
 
 
-<div class="custom-product-gallery__container" style="background-color: {{ additional_description.gallery_background }};">
+<div
+  class="custom-product-gallery__container"
+  style="background-color: {{ additional_description.gallery_background }};"
+  data-color="{{ additional_description.gallery_background }}">
   <div class="swiper mySwiper2">
     <div class="swiper-wrapper product-galley__image-container">
       {% for product_image in product.images %}

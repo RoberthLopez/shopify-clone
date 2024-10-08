@@ -1,0 +1,55 @@
+{{ 'custom-additional-info.css' | asset_url | stylesheet_tag }}
+{% assign additional_description = product.metafields.custom.product_description.value %}
+<section class="additional-info__container">
+  {% render 'custom-svg' layer: 'Layer2'
+    , class: 'waveTop'
+    , data-name: 'Layer 2'
+    , background: '#fd7ad4' %}
+  <div class="additional-info__main-section">
+    <div class="additional-info__info">
+      <div class="additional-info__product-description">
+        <h2>
+          {{ additional_description.title }}
+        </h2>
+        <div class="additional-info__text-container">
+          {{ additional_description.product_description }}
+        </div>
+      </div>
+      <div class="additional-info__product-features">
+        {% if additional_description.ingredients %}
+          <div>
+            <h5>Ingredients</h5>
+            <p>{{ additional_description.ingredients }}</p>
+          </div>
+        {% endif %}
+        {% if additional_description.nutrition_facts %}
+          <div>
+            <h5>Nutrition Facts</h5>
+            <p>{{ additional_description.nutrition_facts }}</p>
+          </div>
+        {% endif %}
+        {% if additional_description.serving %}
+          <div>
+            <h5>Serving</h5>
+            <p>{{ additional_description.serving }}</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% render 'custom-svg' layer: 'Layer3'
+    , class: 'waveBottom'
+    , data-name: 'Layer 3'
+    , background: '#fd7ad4' %}
+</section>
+{% schema %}
+  {
+    "name": "Custom Additional Info",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Additional Info"
+      }
+    ]
+  }
+{% endschema %}

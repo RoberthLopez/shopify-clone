@@ -111,4 +111,8 @@
     height: 100%;
     left: 32px;
   }
+  .custom-product-gallery__container {
+    --waveHeightVW: 13.3333333333vw;
+    height: calc(100vh + var(--waveHeightVW));
+  }
 }

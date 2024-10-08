@@ -1,0 +1,48 @@
+{{ 'custom-slide-into-dms.css' | asset_url | stylesheet_tag }}
+{% render 'custom-svg' layer: 'Layer6'
+  , class: 'waveTop'
+  , data-name: 'Layer 6'
+  , background: '#fd7ad4' %}
+<section class="slide-into-dm__container">
+  <div class="slide-into-dm__title-container">
+    <h3 class="slide-into-dm__title">Slide Into Our DMs</h3>
+  </div>
+
+  <div class="swiper-container swiper-container-free-mode">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'slider_images' %}
+            <div class="swiper-slide slide-scroll-image">
+              {{ block.settings.image | image_url: width: 1000 | image_tag }}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Custom Slide Into Dms",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Slider Images",
+        "type": "slider_images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Slide Into Dms"
+      }
+    ],
+    "class": "slide-into__main-container"
+  }
+{% endschema %}

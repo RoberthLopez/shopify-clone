@@ -1,0 +1,24 @@
+{{ 'custom-additional-gallery.css' | asset_url | stylesheet_tag }}
+<div class="swiper additionalSwiper">
+  <div class="swiper-wrapper">
+    {% for item in product.metafields.custom.additional_gallery.value %}
+      <div class="swiper-slide">
+        {{ item | image_url: width: 2000 | image_tag: class: 'additional-gallery__image' }}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Additional Gallery",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Additional Gallery"
+      }
+    ],
+    "class": "additional-gallery__container"
+  }
+{% endschema %}
