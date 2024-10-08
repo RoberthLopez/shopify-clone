@@ -1,5 +1,15 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
+    "custom_product_gallery": {
     "custom_product_gallery": {
       "type": "custom-product-gallery",
       "settings": {
@@ -9,35 +19,42 @@
       "type": "custom-product-info",
       "blocks": {
         "product_properties_CrtYML": {
+        "product_properties_CrtYML": {
           "type": "product_properties",
           "settings": {
           }
         },
+        "title_MfttiT": {
         "title_MfttiT": {
           "type": "title",
           "settings": {
           }
         },
         "small_text_CD6Ceg": {
+        "small_text_CD6Ceg": {
           "type": "small_text",
           "settings": {
           }
         },
+        "price_LxRh3J": {
         "price_LxRh3J": {
           "type": "price",
           "settings": {
           }
         },
         "description_3PKJg4": {
+        "description_3PKJg4": {
           "type": "description",
           "settings": {
           }
         },
         "variant_picker_KYknXx": {
+        "variant_picker_KYknXx": {
           "type": "variant_picker",
           "settings": {
           }
         },
+        "shipping_info_ePaXnz": {
         "shipping_info_ePaXnz": {
           "type": "shipping_info",
           "settings": {
@@ -45,6 +62,7 @@
             "shipping_states": "AK, AZ, CA, CO, CT, DC, FL, GA, HI, ID, IL, IN, IA, KS, LA, ME, MD, MA, MI, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, SC, TN, TX, VT, VA, WA, WV, WI, WY"
           }
         },
+        "product_recommendations_k3Qw44": {
         "product_recommendations_k3Qw44": {
           "type": "product_recommendations",
           "settings": {
@@ -124,6 +142,8 @@
         },
         "faq_item_grWVRD": {
           "type": "faq_item",
+        "faq_item_grWVRD": {
+          "type": "faq_item",
           "settings": {
             "title": "Do You Accept Returns?",
             "faq_description": "<p>First, thanks for celebrating our Spritz Bday! All free t-shirts with purchase will ship beginning May 2.<\/p><p>If you ordered other merchandise, it will also ship at this same time.<\/p>"
@@ -138,8 +158,19 @@
         "faq_item_CzHadN",
         "faq_item_VqjDbw",
         "faq_item_grWVRD"
+        "faq_item_Ac8f3H",
+        "faq_item_GQyeFB",
+        "faq_item_aWrNFF",
+        "faq_item_RGWQeK",
+        "faq_item_CzHadN",
+        "faq_item_VqjDbw",
+        "faq_item_grWVRD"
       ],
       "settings": {
+      }
+    },
+    "custom_slide_into_dms": {
+      "type": "custom-slide-into-dms",
       }
     },
     "custom_slide_into_dms": {
@@ -189,12 +220,22 @@
         },
         "slider_images_HdPqwd": {
           "type": "slider_images",
+        "slider_images_HdPqwd": {
+          "type": "slider_images",
           "settings": {
             "image": "shopify:\/\/shop_images\/988d511440951fdc21502e61d9baf27e5977ce96-1080x1349_900x1124_4307bd52-0894-437b-aaa3-269271143734.webp"
           }
         }
       },
       "block_order": [
+        "slider_images_8GjHfj",
+        "slider_images_qEQwXc",
+        "slider_images_mynAWC",
+        "slider_images_tEJa4U",
+        "slider_images_36eULE",
+        "slider_images_NXMwzj",
+        "slider_images_RXMtGY",
+        "slider_images_HdPqwd"
         "slider_images_8GjHfj",
         "slider_images_qEQwXc",
         "slider_images_mynAWC",
@@ -210,7 +251,12 @@
   },
   "order": [
     "custom_product_gallery",
+    "custom_product_gallery",
     "main",
+    "custom_additional_info",
+    "custom_additional_gallery",
+    "custom_faqs",
+    "custom_slide_into_dms"
     "custom_additional_info",
     "custom_additional_gallery",
     "custom_faqs",
