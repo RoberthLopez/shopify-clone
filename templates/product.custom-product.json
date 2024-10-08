@@ -17,44 +17,44 @@
     "main": {
       "type": "custom-product-info",
       "blocks": {
-        "product_properties": {
+        "product_properties_CrtYML": {
           "type": "product_properties",
           "settings": {
           }
         },
-        "title": {
+        "title_MfttiT": {
           "type": "title",
           "settings": {
           }
         },
-        "small_text": {
-          "type": "small_text",
-          "settings": {
-          }
-        },
-        "price": {
+        "price_LxRh3J": {
           "type": "price",
           "settings": {
           }
         },
-        "description": {
+        "small_text_CD6Ceg": {
+          "type": "small_text",
+          "settings": {
+          }
+        },
+        "description_3PKJg4": {
           "type": "description",
           "settings": {
           }
         },
-        "variant_picker": {
+        "variant_picker_KYknXx": {
           "type": "variant_picker",
           "settings": {
           }
         },
-        "shipping_info": {
+        "shipping_info_ePaXnz": {
           "type": "shipping_info",
           "settings": {
             "shipping_title": "Where we ship?",
             "shipping_states": "AK, AZ, CA, CO, CT, DC, FL, GA, HI, ID, IL, IN, IA, KS, LA, ME, MD, MA, MI, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, SC, TN, TX, VT, VA, WA, WV, WI, WY"
           }
         },
-        "product_recommendations": {
+        "product_recommendations_k3Qw44": {
           "type": "product_recommendations",
           "settings": {
             "random_products": "true",
@@ -63,6 +63,16 @@
           }
         }
       },
+      "block_order": [
+        "product_properties_CrtYML",
+        "title_MfttiT",
+        "price_LxRh3J",
+        "small_text_CD6Ceg",
+        "description_3PKJg4",
+        "variant_picker_KYknXx",
+        "shipping_info_ePaXnz",
+        "product_recommendations_k3Qw44"
+      ],
       "settings": {
       }
     },
