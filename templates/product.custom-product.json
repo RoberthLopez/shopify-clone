@@ -1,56 +1,51 @@
 {
   "sections": {
-    "custom_product_gallery_7rPxKQ": {
+    "custom_product_gallery": {
       "type": "custom-product-gallery",
-      "settings": {
-      }
-    },
-    "custom_product_T6QphQ": {
-      "type": "custom-product",
       "settings": {
       }
     },
     "main": {
       "type": "custom-product-info",
       "blocks": {
-        "product_properties": {
+        "product_properties_CrtYML": {
           "type": "product_properties",
           "settings": {
           }
         },
-        "title": {
+        "title_MfttiT": {
           "type": "title",
           "settings": {
           }
         },
-        "small_text": {
+        "small_text_CD6Ceg": {
           "type": "small_text",
           "settings": {
           }
         },
-        "price": {
+        "price_LxRh3J": {
           "type": "price",
           "settings": {
           }
         },
-        "description": {
+        "description_3PKJg4": {
           "type": "description",
           "settings": {
           }
         },
-        "variant_picker": {
+        "variant_picker_KYknXx": {
           "type": "variant_picker",
           "settings": {
           }
         },
-        "shipping_info": {
+        "shipping_info_ePaXnz": {
           "type": "shipping_info",
           "settings": {
             "shipping_title": "Where we ship?",
             "shipping_states": "AK, AZ, CA, CO, CT, DC, FL, GA, HI, ID, IL, IN, IA, KS, LA, ME, MD, MA, MI, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, SC, TN, TX, VT, VA, WA, WV, WI, WY"
           }
         },
-        "product_recommendations": {
+        "product_recommendations_k3Qw44": {
           "type": "product_recommendations",
           "settings": {
             "random_products": "true",
@@ -60,123 +55,165 @@
         }
       },
       "block_order": [
-        "product_properties",
-        "title",
-        "small_text",
-        "price",
-        "description",
-        "variant_picker",
-        "shipping_info",
-        "product_recommendations"
+        "product_properties_CrtYML",
+        "title_MfttiT",
+        "small_text_CD6Ceg",
+        "price_LxRh3J",
+        "description_3PKJg4",
+        "variant_picker_KYknXx",
+        "shipping_info_ePaXnz",
+        "product_recommendations_k3Qw44"
       ],
       "settings": {
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "custom_additional_info": {
+      "type": "custom-additional-info",
+      "settings": {
+      }
+    },
+    "custom_additional_gallery": {
+      "type": "custom-additional-gallery",
+      "settings": {
+      }
+    },
+    "custom_faqs": {
+      "type": "custom-faqs",
       "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
+        "faq_item_Ac8f3H": {
+          "type": "faq_item",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "title": "Do you need to sign for your order?",
+            "faq_description": "<p>Yes, a signature of someone 21+ with valid ID is required at the time of delivery.<\/p><p>If you miss the delivery, and the order is returned to our warehouse, you will have the option to:<\/p><p>1. Have your order resent, but incur additional return + re-shipping fees.<\/p><p>2. Receive a refund, minus return + shipping fees.<\/p>"
           }
         },
-        "image-with-text-1": {
-          "type": "text",
+        "faq_item_GQyeFB": {
+          "type": "faq_item",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "title": "How long will it take for my order to arrive?",
+            "faq_description": "<p><strong>Spritz\/Cocktails: <\/strong>Most orders arrive between 3-5 business days from the time that you receive tracking.<\/p><p><strong>Merchandise:<\/strong> Most orders typically arrive between 5-7 business days from the time you receive tracking, unless otherwise noted. Select items are made to order and take longer to get to you as a result.<\/p><p><strong>Pre-Order Items: <\/strong>Ship within 4 weeks.<\/p><p><strong>International Orders:<\/strong> Tend to take a minimum of 10 - 14 business days from the time you receive tracking.<\/p><p><em>Please note that Spritz\/Cocktails ship from a different warehouse than our merch. Separate tracking will be sent.<\/em><\/p>"
+          }
+        },
+        "faq_item_aWrNFF": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Can I cancel my order?",
+            "faq_description": "<p>We have a short window of time that we are able to cancel or update an order. Once it is processed unfortunately no changes can me made to it.<\/p><p>Please reach out to <a href=\"mailto:hello@drinkloverboy.com\" title=\"mailto:hello@drinkloverboy.com\">hello@drinkloverboy.com<\/a> if you have any questions about your order.<\/p>"
+          }
+        },
+        "faq_item_RGWQeK": {
+          "type": "faq_item",
+          "settings": {
+            "title": "How Many Cans Come In My Order?",
+            "faq_description": "<p><strong>Spritz: <\/strong>Our spritzes are sold in 12 packs, so 12 cans in an order.<\/p><p><strong>Cocktails: <\/strong>Our cocktails are sold in 8 packs, so 8 cans in an order.<\/p>"
+          }
+        },
+        "faq_item_CzHadN": {
+          "type": "faq_item",
+          "settings": {
+            "title": "How Do I track My Order?",
+            "faq_description": "<p>Tracking numbers are sent out as soon as your order ships via email and text message if you have opted in. You can also check tracking <a href=\"https:\/\/drinkloverboy.com\/pages\/order-tracking\" title=\"https:\/\/drinkloverboy.com\/pages\/order-tracking\">here<\/a>.<\/p><p>Please note that Spritz\/Cocktails ship from a different warehouse than our merch.<\/p><p>Separate tracking will be sent. If you have questions about the status of your order, you can reach out to <a href=\"mailto:hello@drinkloverboy.com\" title=\"mailto:hello@drinkloverboy.com\">hello@drinkloverboy.com<\/a>.<\/p>"
+          }
+        },
+        "faq_item_VqjDbw": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Do You Accept Returns?",
+            "faq_description": "<p>Given the nature of our product, we are not able to accept returns.Please reach out to <a href=\"mailto:hello@drinkloverboy.com\" title=\"mailto:hello@drinkloverboy.com\">hello@drinkloverboy.com.<\/a> if you have any questions about your order.<\/p>"
+          }
+        },
+        "faq_item_grWVRD": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Do You Accept Returns?",
+            "faq_description": "<p>First, thanks for celebrating our Spritz Bday! All free t-shirts with purchase will ship beginning May 2.<\/p><p>If you ordered other merchandise, it will also ship at this same time.<\/p>"
           }
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "faq_item_Ac8f3H",
+        "faq_item_GQyeFB",
+        "faq_item_aWrNFF",
+        "faq_item_RGWQeK",
+        "faq_item_CzHadN",
+        "faq_item_VqjDbw",
+        "faq_item_grWVRD"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "custom_slide_into_dms": {
+      "type": "custom-slide-into-dms",
       "blocks": {
-        "column-0": {
-          "type": "column",
+        "slider_images_8GjHfj": {
+          "type": "slider_images",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/268783c6a1b2566bd10811bab148a8d1aa4062cd-720x888_900x1110_d8a6f72e-62d1-4098-adfd-2709c710a660.jpg"
           }
         },
-        "column-1": {
-          "type": "column",
+        "slider_images_qEQwXc": {
+          "type": "slider_images",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/b4efe9f194279781cc1b4d4556b0ba5bca16c5f6-1080x1334_900x1112_81b77d75-d909-40cd-82f8-f66cc7c38aea.webp"
+          }
+        },
+        "slider_images_mynAWC": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c00f9fc2272d2e2a418c367b9c7b21d95bb677b9-1080x1350_900x1125_7ce991aa-baff-4b46-9019-460206f9c598.webp"
+          }
+        },
+        "slider_images_tEJa4U": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/988d511440951fdc21502e61d9baf27e5977ce96-1080x1349_900x1124_4307bd52-0894-437b-aaa3-269271143734.webp"
+          }
+        },
+        "slider_images_36eULE": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/268783c6a1b2566bd10811bab148a8d1aa4062cd-720x888_900x1110_d8a6f72e-62d1-4098-adfd-2709c710a660.jpg"
+          }
+        },
+        "slider_images_NXMwzj": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b4efe9f194279781cc1b4d4556b0ba5bca16c5f6-1080x1334_900x1112_81b77d75-d909-40cd-82f8-f66cc7c38aea.webp"
+          }
+        },
+        "slider_images_RXMtGY": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c00f9fc2272d2e2a418c367b9c7b21d95bb677b9-1080x1350_900x1125_7ce991aa-baff-4b46-9019-460206f9c598.webp"
+          }
+        },
+        "slider_images_HdPqwd": {
+          "type": "slider_images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/988d511440951fdc21502e61d9baf27e5977ce96-1080x1349_900x1124_4307bd52-0894-437b-aaa3-269271143734.webp"
           }
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "slider_images_8GjHfj",
+        "slider_images_qEQwXc",
+        "slider_images_mynAWC",
+        "slider_images_tEJa4U",
+        "slider_images_36eULE",
+        "slider_images_NXMwzj",
+        "slider_images_RXMtGY",
+        "slider_images_HdPqwd"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "custom_product_gallery_7rPxKQ",
-    "custom_product_T6QphQ",
+    "custom_product_gallery",
     "main",
-    "image-with-text",
-    "multicolumn",
-    "related-products"
+    "custom_additional_info",
+    "custom_additional_gallery",
+    "custom_faqs",
+    "custom_slide_into_dms"
   ]
 }

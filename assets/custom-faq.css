@@ -45,12 +45,12 @@
   width: 100%;
 }
 .faq__item button {
+  width: 100%;
   display: flex;
   align-items: center;
-  /* gap: 30px; */
   background-color: transparent;
   border: none;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .faq__item button h4 {
   font-family: var(--secondary-font);
