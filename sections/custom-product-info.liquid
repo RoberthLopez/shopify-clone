@@ -1,16 +1,181 @@
-{{ 'custom-product-info.css' |  asset_url |  stylesheet_tag }}
+{{ 'custom-product-info.css' | asset_url | stylesheet_tag }}
+{{ 'custom-js.js' | asset_url | script_tag }}
+
+<div>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'product_properties' %}
+        <h5 {{ block.shopify_attributes }} class="product-info__product-properties">spritz | 6.0% ABV</h5>
+      {% when 'title' %}
+        <div {{ block.shopify_attributes }}>
+          <h1>{{ product.title }}</h1>
+        </div>
+      {% when 'small_text' %}
+        <span {{ block.shopify_attributes }} class="product-info__small-text">MADE WITH AMORE</span>
+      {% when 'price' %}
+        <div {{ block.shopify_attributes }} class="product-info__price-container">
+          <span class="product-info__normal-price">{{ product.price_max | money }}</span>
+          {% if product.price < product.compare_at_price %}
+            <span class="product-info__compare-at-price">{{ product.compare_at_price | money }}</span>
+          {% endif %}
+        </div>
+      {% when 'description' %}
+        <p {{ block.shopify_attributes }}>
+          {{ product.content }}
+        </p>
+      {% when 'variant_picker' %}
+        {% render 'custom-product-form' product: product
+          , block: block %}
+      {% when 'shipping_info' %}
+        <div {{ block.shopify_attributes }} class="product-info__shipping-container">
+          <div class="product-info__shipping-hidden">
+            {{ block.settings.shipping_states }}
+          </div>
+          <span class="product-info__shipping-label">
+            {{ block.settings.shipping_title }}
+          </span>
+        </div>
+      {% when 'product_recommendations' %}
+        <div class="product-info__ymal-container">
+          <h4>You May Also Like</h4>
+          {% if block.settings.random_products == 'true' %}
+            <div class="product-info__ymal-card-container">
+              {% for product_item in collections['all'].products limit: 2 %}
+                <div class="product-info__ymal-card">
+                  <div class="product-info__ymal-card-image-container">
+                    {{ product_item.featured_image | image_url: width: 130 | image_tag }}
+                  </div>
+                  <div class="product-info__ymal-card-info">
+                    <h5>{{ product_item.title }}</h5>
+                    {{ product_item.price | money }}
+                  </div>
+                  <div class="product-info__ymal-card-button-container">
+                    <button class="product-info__cta">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+          {% else %}
+            <div class="">
+              <div>
+                {{ block.settings.product_recommendation_1.featured_image | image_url: width: 400 | image_tag }}
+              </div>
+              <div>
+                <h5>{{ block.settings.product_recommendation_1.title }}</h5>
+                {{ block.settings.product_recommendation_1.price }}
+              </div>
+              <button>
+                Add
+              </button>
+            </div>
+            <div></div>
+          {% endif %}
+        </div>
+
+
+    {% endcase %}
+  {% endfor %}
+
+</div>
 
 
 {% schema %}
-{
+  {
     "name": "Custom Product Info",
-    "settings": [
-        
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Title",
+        "limit": 1,
+        "type": "title"
+      },
+      {
+        "name": "Product Properties",
+        "limit": 1,
+        "type": "product_properties"
+      },
+      {
+        "name": "Small Text",
+        "limit": 1,
+        "type": "small_text"
+      },
+      {
+        "name": "Price",
+        "type": "price",
+        "limit": 1
+      },
+      {
+        "name": "Description",
+        "type": "description",
+        "limit": 1
+      },
+      {
+        "name": "Variant Picker",
+        "type": "variant_picker",
+        "limit": 1
+      },
+      {
+        "name": "Shipping Info",
+        "type": "shipping_info",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "default": "Where we ship?",
+            "label": "Shipping Title",
+            "id": "shipping_title"
+          },
+          {
+            "type": "textarea",
+            "default": "AK, AZ, CA, CO, CT, DC, FL, GA, HI, ID, IL, IN, IA, KS, LA, ME, MD, MA, MI, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, SC, TN, TX, VT, VA, WA, WV, WI, WY",
+            "id": "shipping_states",
+            "label": "Shipping States"
+          }
+        ]
+      },
+      {
+        "name": "Product Recommendations",
+        "limit": 1,
+        "type": "product_recommendations",
+        "settings": [
+          {
+            "type": "select",
+            "default": "true",
+            "label": "Pick Random Products",
+            "options": [
+              {
+                "label": "On",
+                "value": "true"
+              },
+              {
+                "label": "Off",
+                "value": "false"
+              }
+            ],
+            "id": "random_products",
+            "info": "Display randomn Recommendations if On"
+          },
+          {
+            "type": "product",
+            "id": "product_recommendation_1",
+            "label": "Product Recommendation 1"
+          },
+          {
+            "type": "product",
+            "id": "product_recommendation_2",
+            "label": "Product Recommendation 2"
+          }
+        ]
+      }
     ],
     "presets": [
-        {
-            "name": "Custom Product Info"
-        }
-    ]
-}
+      {
+        "name": "Custom Product Info"
+      }
+    ],
+    "class": "product-info__container"
+  }
 {% endschema %}

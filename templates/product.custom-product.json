@@ -1,5 +1,15 @@
 {
   "sections": {
+    "custom_product_gallery_7rPxKQ": {
+      "type": "custom-product-gallery",
+      "settings": {
+      }
+    },
+    "custom_product_T6QphQ": {
+      "type": "custom-product",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -223,13 +233,15 @@
         "padding_bottom": 28
       }
     },
-    "custom_product_T6QphQ": {
-      "type": "custom-product",
+    "custom_product_info_QGqpwX": {
+      "type": "custom-product-info",
       "settings": {
       }
     }
   },
   "order": [
+    "custom_product_gallery_7rPxKQ",
+    "custom_product_info_QGqpwX",
     "custom_product_T6QphQ",
     "main",
     "image-with-text",

@@ -1,0 +1,80 @@
+{% form 'product'
+  , product %}
+
+  <!-- Variant selector -->
+  <custom-variant-selector
+    {{ block.shopify_attributes }}
+    class="custom-variant-selector"
+    data-product="{{ product | json |  escape }}">
+    {% if product.options.size > 0 %}
+      <script>
+                    console.log({{ shop.money_format | json }}, 'option with values')
+      </script>
+      <script>
+                    console.log({{ product | json }}, 'product')
+      </script>
+      <div class="custom-variant-selector__options">
+        {% for option in product.options_with_values %}
+          <div class="custom-variant-selector__option">
+            <span class="custom-variant-selector__option-name">{{ option.name }}</span>
+            <div class="custom-variant-selector__option-variants">
+              {% for value in option.values %}
+                <label class="custom-variant-selector__option-variant">
+                  <input
+                    class="custom-variant-selector__option-variant-radio"
+                    type="radio"
+                    name="options[{{ option.name }}]"
+                    id=""
+                    tabindex="0"
+                    value="{{ value }}"
+                    {% if forloop.first %}
+                    checked
+                    {% endif %}>
+                  <span class="custom-variant-selector__option-variant-button">{{ value }}</span>
+                </label>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+        id="variant-id-input">
+
+      <!-- Quantity Selector -->
+      <div class="product-info__action">
+        <custom-quantity-selector>
+          <button type="button" class="custom-qty-selector__substract"></button>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            value="1"
+            min="1">
+          <button type="button" class="custom-qty-selector__add"></button>
+        </custom-quantity-selector>
+
+
+        <!-- Add to Cart Button -->
+        <button
+          class="product-info__add-to-cart product-info__cta"
+          type="submit"
+          {% unless product.selected_variant.available == 'true' %}
+          disabled="true"
+          {% endunless %}>
+          {% if product.selected_variant.available == true %}
+            Add to Cart
+          {% else %}
+            Sold Out
+          {% endif %}
+
+        </button>
+      </div>
+
+    {% endif %}
+  </custom-variant-selector>
+
+{% endform %}
