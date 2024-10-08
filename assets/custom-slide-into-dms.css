@@ -50,6 +50,7 @@
 @media screen and (min-width: 768px) {
   .slide-into-dm__title {
     padding-top: 0;
+    font-size: 64px;
   }
   .slide-into__main-container {
     grid-column: 1 / 3;
