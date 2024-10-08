@@ -27,13 +27,13 @@
           "settings": {
           }
         },
-        "price_LxRh3J": {
-          "type": "price",
+        "small_text_CD6Ceg": {
+          "type": "small_text",
           "settings": {
           }
         },
-        "small_text_CD6Ceg": {
-          "type": "small_text",
+        "price_LxRh3J": {
+          "type": "price",
           "settings": {
           }
         },
@@ -66,8 +66,8 @@
       "block_order": [
         "product_properties_CrtYML",
         "title_MfttiT",
-        "price_LxRh3J",
         "small_text_CD6Ceg",
+        "price_LxRh3J",
         "description_3PKJg4",
         "variant_picker_KYknXx",
         "shipping_info_ePaXnz",
