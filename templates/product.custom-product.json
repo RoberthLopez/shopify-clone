@@ -1,7 +1,78 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "custom_product_gallery_7rPxKQ": {
       "type": "custom-product-gallery",
+      "settings": {
+      }
+    },
+    "custom_product_info_QGqpwX": {
+      "type": "custom-product-info",
+      "blocks": {
+        "product_properties_7R869P": {
+          "type": "product_properties",
+          "settings": {
+          }
+        },
+        "title_8imB6z": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "small_text_cpi7cj": {
+          "type": "small_text",
+          "settings": {
+          }
+        },
+        "price_MrGMHj": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description_tQxDGP": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker_pz6Dhn": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "shipping_info_jbGdmj": {
+          "type": "shipping_info",
+          "settings": {
+            "shipping_title": "Where we ship?",
+            "shipping_states": "AK, AZ, CA, CO, CT, DC, FL, GA, HI, ID, IL, IN, IA, KS, LA, ME, MD, MA, MI, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, SC, TN, TX, VT, VA, WA, WV, WI, WY"
+          }
+        },
+        "product_recommendations_AcCVNh": {
+          "type": "product_recommendations",
+          "settings": {
+            "random_products": "true",
+            "product_recommendation_1": "",
+            "product_recommendation_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_properties_7R869P",
+        "title_8imB6z",
+        "small_text_cpi7cj",
+        "price_MrGMHj",
+        "description_tQxDGP",
+        "variant_picker_pz6Dhn",
+        "shipping_info_jbGdmj",
+        "product_recommendations_AcCVNh"
+      ],
       "settings": {
       }
     },
@@ -148,7 +219,7 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         }
@@ -179,7 +250,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -188,7 +259,7 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -231,11 +302,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "custom_product_info_QGqpwX": {
-      "type": "custom-product-info",
-      "settings": {
       }
     }
   },
